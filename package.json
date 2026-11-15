@@ -1,0 +1,42 @@
+{
+  "name": "learning-studio",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3100",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3100",
+    "check": "tsc --noEmit",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.ts",
+    "probe": "node scripts/probe.mjs",
+    "invite": "node scripts/invite.mjs",
+    "feedback": "node scripts/feedback.mjs",
+    "developer:password": "node --disable-warning=ExperimentalWarning scripts/developer-password.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.542",
+    "@remotion/renderer": "^4.0.542",
+    "@types/d3-force": "^3.0.10",
+    "@types/pdfkit": "^0.17.7",
+    "d3-force": "^3.0.1",
+    "lucide-react": "^0.577.0",
+    "next": "16.4.6",
+    "pdfjs-dist": "^5.4.624",
+    "pdfkit": "^0.20.2",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.542",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.3"
+  }
+}
